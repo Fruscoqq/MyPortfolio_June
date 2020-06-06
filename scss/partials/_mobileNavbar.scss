@@ -7,8 +7,8 @@ $bg-secondary: rgb(222, 228, 238);
 
 .mobile-navbar {
   display: none;
-  background: #F8F9FA;
-  padding: 1rem;
+  background: #f8f9fade;
+  padding: 1.9rem;
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -19,7 +19,7 @@ $bg-secondary: rgb(222, 228, 238);
 
   .navbar-toggle {
     position: absolute;
-    top: 10px;
+    top: 0px;
     right: 20px;
     cursor: pointer;
     color: $primary-color;
@@ -31,15 +31,6 @@ $bg-secondary: rgb(222, 228, 238);
     padding: 0.4rem 2rem;
     color: $primary-color;
     font-size: 1.1rem;
-
-    span {
-      background: $secondary-color;
-      padding: 1rem;
-      border: solid 0 white;
-      border-radius: 50%;
-      margin-right: -1.1rem;
-      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
-    }
   }
 
   .main-nav {
@@ -59,13 +50,17 @@ $bg-secondary: rgb(222, 228, 238);
 
     a {
       position: relative;
-      color: $primary-color;
-      transition: 1s all ease-in;
+      color: #052d83;
+      transition: 0.1s all ease-in;
       animation: secondmove .3s;
 
       @keyframes secondmove {
         from {opacity: .1;}
         to {opacity: 1;}
+      }
+
+      &:hover{
+        color: #1d1d1d;
       }
     }
   }
