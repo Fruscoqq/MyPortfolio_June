@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import './partials/animatedArrow';
 @import './partials/mobileNavbar';
 
 $primary-color: #FED66A;
@@ -83,7 +82,6 @@ nav {
   
 
   .nav-brand h3 {
-    // border: 3px solid $primary-color;
     padding: 0.4rem 2rem;
     color: $primary-color;
     font-size: 1.6rem;
@@ -206,8 +204,6 @@ section#showcase {
   overflow: hidden;
   background: #FFFFFF;
   z-index: 0;
-  // background-image: linear-gradient(to bottom, #ffffff, #fafbfd, #f5f7fa, #eff3f7, #e8f0f4);
-  
 
     .planet2 {
       display: block;
@@ -222,7 +218,6 @@ section#showcase {
 section#about-me{
   color: rgb(20, 20, 20);
   text-align: center;
-  // padding: 6rem 1rem 0 1rem;
   position: relative;
 
   .container {
@@ -278,11 +273,8 @@ section#about-me{
     right: 0;
     bottom: 160px;
     z-index: -1;
-    
     }
   
-
-
   h3{
     color: #FED573;
     padding: 1rem 0;
@@ -307,8 +299,7 @@ section#about-me{
     gap: 1rem;
 
     &>div {
-  //  @include gradient(linear-gradient(to right top, #e02f4a, #e03a53, #e1445b, #e04d63, #e0566b));
-  color: #FED573;
+      color: #FED573;
       border-radius: 6px;
       padding: 1rem 0;
       background: #002679c7;
@@ -353,7 +344,6 @@ section.skills{
     top: 80%;
     right: 40%;
     transform: translate(-50%, -50%);
-    // animation: floating 12s linear infinite;
   }
 
   .figure2{
@@ -482,11 +472,11 @@ section#projects{
         &:hover {
           background: #052d83;
           color: #f4f4f4
-        }
+       }
       }
+     }
     }
    }
-  }
   }
 
 
@@ -731,8 +721,8 @@ section.footer {
 
 // Media Quaries
 
-// PC - 1438px
-@media only screen and (max-width: 1438px) {
+// PC - 900px
+@media only screen and (max-width: 900px) {
   nav {
     display: none;
   }
@@ -797,7 +787,7 @@ section.footer {
     h3{
       margin-bottom: 1rem;
       color: #00287D;
-      font-size: 1.6rem;
+      font-size: 1.9rem;
       text-align: center;
       text-align: left;
       padding: 0.6rem 1rem;
@@ -807,7 +797,7 @@ section.footer {
     span{
       margin: 2rem 0;
       color: #2AB8E0;
-      font-size: 1.3rem;
+      font-size: 1.6rem;
       font-weight: 900;
       text-align: center;
       background: rgba(255, 255, 255, 0.801);

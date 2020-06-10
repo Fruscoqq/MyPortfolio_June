@@ -7,266 +7,295 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./dist/css/main.css">
   <link rel="stylesheet" href="./dist/css/hamburgers.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css"
+    integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
+  <style>
+    #fp-nav ul li a span,
+    .fp-slidesNav ul li a span {
+      background: #3576DB;
+    }
+
+    #fp-nav ul li .fp-tooltip {
+      color: rgb(24, 24, 24);
+      font-size: 14px;
+      font-weight: 400;
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
   <title>My Portoflio</title>
 </head>
 
 
 <body>
-  <header>
-    <!-- Mobile navbar -->
-    <div class="mobile-navbar">
-      <span class="navbar-toggle" id="js-navbar-toggle"><button class="hamburger hamburger--slider" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button></span>
-      <!-- <h3><span class="h3-span">My</span> Portoflio.</h3> -->
+  <div id="fullpage">
+    <div class="section">
+      <header>
+        <!-- Mobile navbar -->
+        <div class="mobile-navbar">
+          <span class="navbar-toggle" id="js-navbar-toggle"><button class="hamburger hamburger--slider" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button></span>
+          <ul class="main-nav" id="js-menu">
+            <li>
+              <a href="#about-me" class="nav-link">What I do</a>
+            </li>
+            <li>
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li>
+              <a href="#contact-me" class="nav-link">Contact me</a>
+            </li>
+          </ul>
+        </div>
+        <div class="container">
+          <!-- Dekstop navbar -->
+          <nav>
+            <!--  -->
+        </div>
+        </nav>
 
-      <ul class="main-nav" id="js-menu">
-        <li>
-          <a href="#showcase" class="nav-link">Home</a>
-        </li>
-        <li>
-          <a href="#about-me" class="nav-link">About</a>
-        </li>
-        <li>
-          <a href="#projects" class="nav-link">Work</a>
-        </li>
-        <li>
-          <a href="#contact-me" class="nav-link">Contact</a>
-        </li>
-      </ul>
+        <!-- Showcase -->
+        <section id="showcase">
+          <h3 class="showcase-text">I'm Arvydas Kelmanas</h3>
+          <span class="txt-type" data-wait="3000" data-words="[&quot;Junior Web Developer&quot;]"><span class="txt">Web
+              Desig</span></span>
+          <div class="buttons">
+            <a href="#section4" class="work-btn">My Work</a>
+            <a href="#section6" class="talk-btn">Let's talk</a>
+          </div>
+        </section>
+        <img src="./clouds3.png" alt="" class="clouds1">
+      </header>
     </div>
-    <div class="container">
-      <!-- Dekstop navbar -->
-      <nav>
-        <!-- <div class="nav-brand">
-          <h3><span class="h3-span">My</span> Portoflio.</h3>
-        </div> -->
-        <ul class="nav-list">
-          <a href="#showcase">
-            <li class="nav-list-items">Home</li>
-          </a>
-          <a href="#about-me">
-            <li class="nav-list-items">About</li>
-          </a>
-          <a href="#projects">
-            <li class="nav-list-items">Work</li>
-          </a>
-          <a href="#contact-me">
-            <li class="nav-list-items">Contact</li>
-          </a>
-        </ul>
-    </div>
-    </nav>
-    <!-- Showcase -->
-    <section id="showcase">
-      <!-- <video autoplay muted loop id="myVideo">
-          <source src="./file.mp4" type="video/mp4">
-        </video> -->
-      <!-- <img src="./dist/images/space6.svg" alt=""> -->
-      <h3 class="showcase-text">I'm Arvydas Kelmanas</h3>
-      <span class="txt-type" data-wait="3000" data-words="[&quot;Junior Web Developer&quot;]"><span class="txt">Web
-          Desig</span></span>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing </br>
-        elit. Assumenda qui voluptates dicta. Neque dolorem</br>
-        voluptatibus quasi totam similique. </br>
-        debitis porro, obcaecati .</p>
-      <div class="buttons">
-        <a href="#projects" class="work-btn">My Work</a>
-        <a href="#projects" class="talk-btn">Let's talk</a>
+
+
+    <!-- About me -->
+    <div class="section">
+      <div class="wrapper">
+        <img src="./dist/images/planet11.svg" alt="" class="planet2">
+        <section id="about-me">
+          <div class="container">
+            <div class="help">
+              <h1>What I do</h1>
+              <p class="whatIdoDesc">
+                I am a junior web developer, mainly working with front-end but also I recently started learning and
+                applying back-end to my projects. I'm beginner in web development and very passionate, always eager to
+                learn. I specialize in the following:
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SPECIALIZE -->
+        <section class="specialize">
+          <div class="container">
+            <div class="grid-container">
+              <div class="grid-1">
+                <img src="./dist/images/skills1.png" alt="">
+                <h1>Mobile Responsive</h1>
+                <p>Create responsive websites that work on a wide range of devices</p>
+              </div>
+              <div class="grid-2">
+                <img src="./dist/images/skills2.png" alt="">
+                <h1>Design</h1>
+                <p>Assist with production of clean and functional design</p>
+              </div>
+              <div class="grid-3">
+                <img src="./dist/images/skills3.png" alt="">
+                <h1>Management System</h1>
+                <p>Integrate your website into an easy to use content management system</p>
+              </div>
+              <div class="grid-4">
+                <img src="./dist/images/skills4.png" alt="">
+                <h1>Web Applications</h1>
+                <p>Create Web Applications using latest technologies, JavaScript, ES6,React with Hooks and Context API
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="figure"></div>
+          <img src="./dist/images/planet10.svg" alt="" class="planet1">
       </div>
-    </section>
-    <img src="./clouds3.png" alt="" class="clouds1">
-  </header>
+      </section>
+    </div>
 
-  <!-- About me -->
-  <div class="wrapper">
-    <img src="./dist/images/planet11.svg" alt="" class="planet2">
-    <section id="about-me">
+    <!-- SKILLS -->
+    <div class="section">
+      <section class="skills">
+        <div class="container">
+          <div class="skillsWrapper">
+            <h3>My skills</h3>
+            <p>While learning web development I gained these sets of skills from every project that I've made in the
+              past.</br>
+              With these sets of skills most of my projects were made from scratch.</p>
+            <div class="grid-container">
+              <img src="./dist/images/icons8-html-5.svg" alt="" class="html5">
+              <img src="./dist/images/icons8-css3.svg" alt="" class="css">
+              <img src="./dist/images/icons8-javascript.svg" alt="" class="js">
+              <img src="./dist/images/icons8-sass.svg" alt="" class="sass">
+              <img src="./dist/images/icons8-git.svg" alt="" class="git">
+              <img src="./dist/images/icons8-react-native.svg" alt="" class="react">
+              <img src="./dist/images/icons8-nodejs.svg" alt="" class="node">
+              <img src="./dist/images/icons8-mongodb.svg" alt="" class="mongo">
+              <img src="./dist/images/icons8-npm.svg" alt="" class="npm">
+            </div>
+          </div>
+        </div>
+        <div class="figure1"></div>
+        <div class="figure2"></div>
+      </section>
+    </div>
+
+
+    <!-- PROJECTS -->
+    <div class="section">
+      <section id="projects">
+        <div class="container">
+          <h3>Latest projects</h3>
+          <div class="work1">
+            <div class="description">
+              <h4>Single page Web Application for final year project</h4>
+              <p>This was a fully custom website/application that I designed and developed from scratch using MERN
+                stack.
+                The
+                aim of this application was to have a friendly but at the same time professional vibe for future users.
+              </p>
+              <div class="links">
+                <a href="https://obscure-inlet-27274.herokuapp.com/">Visit IdeasHub</a>
+                <a href="https://github.com/Fruscoqq/Full-stack-MERN-app---Final-Project">Source Code</a>
+              </div>
+            </div>
+            <div class="picture img1">
+              <a href="#"><img src="./dist/images/work1PSv2.png" alt=""></a>
+            </div>
+          </div>
+
+          <div class="work2">
+            <div class="description">
+              <h4>WordPress WooCommerce website for jobs search</h4>
+              <p>The purpose of this project was to make a website similar to Indeed for posting jobs.
+                Employers and potential employees could jobhunt within this website. Employeers could post the jobs
+                while potential employees could apply for them.
+              </p>
+              <div class="links">
+                <a href="http://jobsamplewp.site/">Visit Sesame</a>
+              </div>
+            </div>
+            <div class="picture img2">
+              <a href="#"> <img src="./dist/images/work2PS.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- WORK #2 -->
+    <div class="section">
+      <section id="projects" class="sub-projects">
+        <div class="container">
+          <div class="work1">
+            <div class="description">
+              <h4>React Web Application for checking PUBG game stats</h4>
+              <p>Single page application which was built for users to check their in-game stats as well to see the
+                global leaderboard.
+                The website was built using React as a front-end framework, Boostrap as a CSS framework, SASS as a
+                pre-processor.
+              </p>
+              <div class="links">
+                <a href="https://pubgtrck.herokuapp.com/">Visit PUBG Tracker</a>
+                <a href="https://github.com/Fruscoqq/PubgTracker">Source Code</a>
+              </div>
+            </div>
+            <div class="picture img3">
+              <a href="#"><img src="./dist/images/work3PSv3.png" alt=""></a>
+            </div>
+          </div>
+
+          <div class="work2">
+            <div class="description">
+              <h4>A practise based web site for a fictional company</h4>
+              <p>This website was completely experimental, while creating I wanted to explore different design choices
+                that could be applied in my future work.
+              </p>
+              <div class="links">
+                <a href="https://cranky-dijkstra-9b4b56.netlify.app/">Visit New Dawn</a>
+                <a href="https://github.com/Fruscoqq/JobSearch-CSS-HTML5">Source Code</a>
+              </div>
+            </div>
+            <div class="picture img4">
+              <a href="#"> <img src="./dist/images/work4PSv1.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- CONTACT ME -->
+    <div class="section">
+      <section id="contact-me">
+        <div class="container">
+          <h3 class="contacth3">Contact me</h3>
+          <div class="grid-container-contact">
+            <div class="my-info">
+              <h3>Send a message.</h3>
+              <p>If you find my projects interesting and would like to contact me, please do so, I look forward to
+                working with you.</p>
+              <h4>Send an email:</h4>
+              <a href="mailto:senter64@gmail.com" class="myEmail">senter64@gmail.com</a>
+              <h3 class="catchMe">You can catch me on:</h3>
+              <div class="socialMedia">
+                <a href="https://github.com/Fruscoqq"><i class="fab fa-github fa-2x"></i></a>
+                <a href="mailto:senter64@gmail.com"><i class="fab fa-google fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/arvydas-kelmanas-216346148/"><i
+                    class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://www.facebook.com/arvydas.nesakysiu.967"><i
+                    class="fab fa-facebook-square fa-2x"></i></a>
+              </div>
+            </div>
+            <form method="POST" data-netlify="true">
+              <p class="formText">Or use the form below</p>
+              <input type="text" name="name" placeholder="Your Name*">
+              <input type="email" name="email" placeholder="Your Email*">
+              <textarea name="message" rows="6" placeholder="How I could help?*"></textarea>
+              <div class="recaptcha" data-netlify-recaptcha="true"></div>
+              <button type="submit" class="contactBtn">Get in touch</button>
+            </form>
+
+          </div>
+        </div>
+        <div class="figure"></div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <div class="section fp-auto-height">
       <div class="container">
-        <div class="help">
-          <h1>What I do</h1>
-          <p>A front-end developer's role is to combine design and business logic to achieve a user-facing product. To
-            do
-            this successfully, a wide skill set is necessary to produce a quality user experience
-            that leads to meeting business goals. With my experience I can:
-          </p>
-        </div>
+        <section class="footer">
+          <div class="grid-container">
+            <div class="footer-text">
+              <p>Copyright © 2020 Arvydas Kelmanas.<br /> All rights reserved.</p>
+            </div>
+            <div class="footer-icons">
+              <!--  -->
+            </div>
+          </div>
       </div>
-    </section>
-
-    <!-- SPECIALIZE -->
-    <section class="specialize">
-      <div class="container">
-        <div class="grid-container">
-          <div class="grid-1">
-            <img src="./dist/images/skills1.png" alt="">
-            <h1>Mobile Responsive</h1>
-            <p>Create responsive websites that work on a wide range of devices</p>
-          </div>
-          <div class="grid-2">
-            <img src="./dist/images/skills2.png" alt="">
-            <h1>Design</h1>
-            <p>Assist with production of clean and functional design</p>
-          </div>
-          <div class="grid-3">
-            <img src="./dist/images/skills3.png" alt="">
-            <h1>Management System</h1>
-            <p>Integrate your website into an easy to use content management system</p>
-          </div>
-          <div class="grid-4">
-            <img src="./dist/images/skills4.png" alt="">
-            <h1>Web Applications</h1>
-            <p>Create Web Applications using latest technologies, JavaScript, ES6,React with Hooks and Context API</p>
-          </div>
-        </div>
-      </div>
-      <div class="figure"></div>
-      <img src="./dist/images/planet10.svg" alt="" class="planet1">
+      </section>
+    </div>
   </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="skills">
-    <div class="container">
-      <div class="skillsWrapper">
-        <h3>My skills</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quibusdam repellendus commodi atque,
-          officiis quidem, cupiditate sunt quisquam vero nobis modi?</p>
-        <div class="grid-container">
-          <img src="./dist/images/icons8-html-5.svg" alt="" class="html5">
-          <img src="./dist/images/icons8-css3.svg" alt="" class="css">
-          <img src="./dist/images/icons8-javascript.svg" alt="" class="js">
-          <img src="./dist/images/icons8-sass.svg" alt="" class="sass">
-          <img src="./dist/images/icons8-git.svg" alt="" class="git">
-          <img src="./dist/images/icons8-react-native.svg" alt="" class="react">
-          <img src="./dist/images/icons8-nodejs.svg" alt="" class="node">
-          <img src="./dist/images/icons8-mongodb.svg" alt="" class="mongo">
-          <img src="./dist/images/icons8-npm.svg" alt="" class="npm">
-        </div>
-      </div>
-    </div>
-    <div class="figure1"></div>
-    <div class="figure2"></div>
-  </section>
-
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="container">
-      <h3>Latest projects</h3>
-      <div class="work1">
-        <div class="description">
-          <h4>Single page Web Application for final year project</h4>
-          <p>This was a fully custom website/application that I designed and developed from scratch using MERN stack.
-            The
-            aim of this application was to have a friendly but at the same time professional vibe for future users.
-          </p>
-          <div class="links">
-            <a href="#">Visit IdeasHub</a>
-            <a href="#">Source Code</a>
-          </div>
-        </div>
-        <div class="picture">
-          <a href="#"><img src="./dist/images/work1PSv2.png" alt=""></a>
-        </div>
-      </div>
-
-      <div class="work2">
-        <div class="description">
-          <h4>Single page Web Application for final year project</h4>
-          <p>This was a fully custom website/application that I designed and developed from scratch using MERN stack.
-            The
-            aim of this application was to have a friendly but at the same time professional vibe for future users.
-          </p>
-          <div class="links">
-            <a href="#">Visit IdeasHub</a>
-            <a href="#">Source Code</a>
-          </div>
-        </div>
-        <div class="picture">
-          <a href="#"> <img src="./dist/images/work2PS.png" alt=""></a>
-        </div>
-      </div>
-
-      <div class="work3">
-        <div class="description">
-          <h4>Single page Web Application, PUBG stats tracker</h4>
-          <p>This was a fully custom website/application that I designed and developed from scratch using MERN stack.
-            The
-            aim of this application was to have a friendly but at the same time professional vibe for future users.
-          </p>
-          <div class="links">
-            <a href="#">Visit IdeasHub</a>
-            <a href="#">Source Code</a>
-          </div>
-        </div>
-        <div class="picture">
-          <a href="#"><img src="./dist/images/work3PSv1.png" alt=""></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT ME -->
-
-  <section id="contact-me">
-    <div class="container">
-      <h3 class="contacth3">Contact me</h3>
-      <div class="grid-container-contact">
-        <div class="my-info">
-          <h3>Send a message.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident hic eveniet ipsa?</p>
-          <h4>Send an email:</h4>
-          <a href="mailto:senter64@gmail.com" class="myEmail">senter64@gmail.com</a>
-          <h3 class="catchMe">You can catch me on:</h3>
-          <div class="socialMedia">
-            <a href="https://github.com/Fruscoqq"><i class="fab fa-github fa-2x"></i></a>
-            <a href="mailto:senter64@gmail.com"><i class="fab fa-google fa-2x"></i></a>
-            <a href="https://www.linkedin.com/in/arvydas-kelmanas-216346148/"><i class="fab fa-linkedin fa-2x"></i></a>
-            <a href="https://www.facebook.com/arvydas.nesakysiu.967"><i class="fab fa-facebook-square fa-2x"></i></a>
-          </div>
-        </div>
-        <form method="POST" data-netlify="true">
-          <p class="formText">Or use the form below</p>
-          <input type="text" name="name" placeholder="Your Name*">
-          <input type="email" name="email" placeholder="Your Email*">
-          <textarea name="message" rows="6" placeholder="How I could help?*"></textarea>
-          <div class="recaptcha" data-netlify-recaptcha="true"></div>
-          <button type="submit" class="contactBtn">Get in touch</button>
-        </form>
-
-      </div>
-    </div>
-    <div class="figure"></div>
-  </section>
-
-  <!-- Footer -->
-  <div class="container">
-    <section class="footer">
-      <div class="grid-container">
-        <div class="footer-text">
-          <p>Copyright © 2020 Arvydas Kelmanas.<br /> All rights reserved.</p>
-        </div>
-        <div class="footer-icons">
-          <!--  -->
-        </div>
-      </div>
-  </div>
-  </section>
-
 
 
 
   <script src="https://kit.fontawesome.com/bd9f61eaab.js" crossorigin="anonymous"></script>
-  <script src="./dist/js/typewritter.js"></script>
   <script src="./dist/js/app.js"></script>
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+  <script src="./dist/js/typewritter.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+  <script src="./dist/js/fPage.js"></script>
 
-  <!-- <script>
-    gsap.from('.showcase-text', { opacity: 0, duration: 2, y: -50, ease: 'elastic(9, 6)' });
-  </script> -->
+
 </body>
 
 </html>

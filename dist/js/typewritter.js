@@ -18,17 +18,17 @@ class TypeWriter {
     // Check if deleting
     if (this.isDeleting) {
       // Remove char
-      this.txt = fullTxt.substring(0, this.txt.length - 1);
+      this.txt = fullTxt.substring(0, this.txt.length - 2);
     } else {
       // Add char
-      this.txt = fullTxt.substring(0, this.txt.length + 1);
+      this.txt = fullTxt.substring(0, this.txt.length + 3);
     }
 
     // Insert txt into element
     this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
 
     // Initial Type Speed
-    let typeSpeed = 300;
+    let typeSpeed = 200;
 
     if (this.isDeleting) {
       typeSpeed /= 2;
