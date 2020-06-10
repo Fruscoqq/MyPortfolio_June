@@ -631,6 +631,9 @@ section.footer {
     flex-direction: column;
     text-align: center; } }
 
+.recaptcha {
+  width: 30%; }
+
 ::-webkit-scrollbar {
   width: 12px;
   /* for vertical scrollbars */
