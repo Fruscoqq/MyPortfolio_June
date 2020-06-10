@@ -484,7 +484,8 @@ section#contact-me {
       font-family: 'Poppins', sans-serif;
       width: 160px;
       margin-right: 0;
-      margin-left: auto; }
+      margin-left: auto;
+      cursor: pointer; }
       section#contact-me .grid-container-contact .contactBtn:hover {
         background: linear-gradient(to right bottom, #ff0f78, #ff5258, #ff8838, #ffbb1c, #ffeb2d);
         transform: translateY(-3px); }
