@@ -631,8 +631,11 @@ section.footer {
     flex-direction: column;
     text-align: center; } }
 
-.recaptcha {
-  width: 30%; }
+@media only screen and (max-width: 355px) {
+  section#contact-me {
+    padding: 0;
+    position: relative;
+    overflow: hidden; } }
 
 ::-webkit-scrollbar {
   width: 12px;

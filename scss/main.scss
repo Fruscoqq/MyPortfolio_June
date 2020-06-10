@@ -870,8 +870,12 @@ section.footer {
 }
 }
 
-.recaptcha{
-  width: 30%;
+@media only screen and (max-width: 355px) {
+  section#contact-me {
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
 }
 
 // Scrollbar
