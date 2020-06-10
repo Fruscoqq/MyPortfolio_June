@@ -631,6 +631,10 @@ section.footer {
     flex-direction: column;
     text-align: center; } }
 
+@media only screen and (max-width: 500px) {
+  section#contact-me {
+    padding: 0 1rem; } }
+
 ::-webkit-scrollbar {
   width: 12px;
   /* for vertical scrollbars */
