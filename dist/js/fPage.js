@@ -2,11 +2,11 @@ new fullpage('#fullpage', {
   autoScrolling: true,
   navigation: true,
   responsiveWidth: 900,
+  licenseKey: '37EFD287-0C274448-89CF09F0-8C33CAB2',
   navigationTooltips: ['Home', 'What I do', 'Skills', 'Latest Projects', 'Projects', 'Contact me', 'Footer'],
   anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6'],
   onLeave: (origin, destination, direction) => {
     const section = destination.item
-
     if (destination.index === 1 && screen.width > 900) {
       const titleH1 = section.querySelector('h1');
       const text = section.querySelector('.whatIdoDesc');
@@ -42,4 +42,5 @@ new fullpage('#fullpage', {
     }
   }
 })
+
 
