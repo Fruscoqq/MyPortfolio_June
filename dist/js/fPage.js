@@ -2,7 +2,6 @@ new fullpage('#fullpage', {
   autoScrolling: true,
   navigation: true,
   responsiveWidth: 900,
-  scrollOverflow: true,
   navigationTooltips: ['Home', 'What I do', 'Skills', 'Latest Projects', 'Projects', 'Contact me', 'Footer'],
   anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6'],
   onLeave: (origin, destination, direction) => {
@@ -19,21 +18,21 @@ new fullpage('#fullpage', {
       const title = section.querySelector('h3');
       const text = section.querySelector('p');
       const container = section.querySelector('.grid-container');
-      const tl = new TimelineMax({ delay: 0.5 });
-      tl.fromTo(title, 0.3, { x: 50, opacity: 0 }, { x: 0, opacity: 1 })
-        .fromTo(text, 0.3, { x: -50, opacity: 0 }, { x: 0, opacity: 1 })
-        .fromTo(container, 0.3, { x: 50, opacity: 0 }, { x: 0, opacity: 1 })
+      const tl = new TimelineMax({ delay: 0.3 });
+      tl.fromTo(title, 0.2, { x: 50, opacity: 0 }, { x: 0, opacity: 1 })
+        .fromTo(text, 0.2, { x: -50, opacity: 0 }, { x: 0, opacity: 1 })
+        .fromTo(container, 0.2, { x: 50, opacity: 0 }, { x: 0, opacity: 1 })
     }
     else if (destination.index === 3 && screen.width > 900) {
       const img1 = section.querySelector('.img1');
       const img2 = section.querySelector('.img2');
-      const tl = new TimelineMax({ delay: 0.5 });
+      const tl = new TimelineMax({ delay: 0.3 });
       tl.fromTo(img1, 0.3, { x: '50', opacity: 0 }, { x: 0, opacity: 1 })
         .fromTo(img2, 0.3, { x: '50', opacity: 0 }, { x: 0, opacity: 1 })
     } else if (destination.index === 4 && screen.width > 900) {
       const img3 = section.querySelector('.img3');
       const img4 = section.querySelector('.img4');
-      const tl = new TimelineMax({ delay: 0.5 });
+      const tl = new TimelineMax({ delay: 0.3 });
       tl.fromTo(img3, 0.3, { x: '-50', opacity: 0 }, { x: 0, opacity: 1 })
         .fromTo(img4, 0.3, { x: '-50', opacity: 0 }, { x: 0, opacity: 1 })
     }
