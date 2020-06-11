@@ -6,7 +6,6 @@ new fullpage('#fullpage', {
   anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6'],
   onLeave: (origin, destination, direction) => {
     const section = destination.item
-    console.log(destination.index)
 
     if (destination.index === 1 && screen.width > 900) {
       const titleH1 = section.querySelector('h1');
